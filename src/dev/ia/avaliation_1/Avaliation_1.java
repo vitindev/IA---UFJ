@@ -1,14 +1,16 @@
+package dev.ia.avaliation_1;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class Main {
+public class Avaliation_1 {
 
     private static Map<String, Float> velocitySet, supportSet, maintenanceSet, documentationSet, writingSet, librarySet;
 
-    public static void main(String[] args) {
+    public static void execute() {
 
         velocitySet = new LinkedHashMap<>();
         velocitySet.put("Muito ruim", 1.0F);
