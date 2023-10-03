@@ -1,12 +1,13 @@
 package dev.ia.extra_project;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class GeneticAlgorithm {
 
     // Algoritmo genético
-    private final int POPULATION_SIZE = 50;
-    private final int NUM_GENERATIONS = 50;
+    private final int POPULATION_SIZE = 15;
+    private final int NUM_GENERATIONS = 25;
     private final double MUTATION_VARIATION = 0.1D;
 
     // Intervalo entre os pontos
@@ -70,8 +71,8 @@ public class GeneticAlgorithm {
 
         }
 
-        System.out.println("Best gene find: x = " + best_gene + ", f(x) = " + best_fitness);
-        System.out.println("Best gene find rounded: x = " + String.format("%.2f", best_gene) + ", f(x) = " + String.format("%.2f", best_fitness));
+        System.out.println(Arrays.toString(population));
+        System.out.println("Best gene find in population: x = " + best_gene + ", f(x) = " + best_fitness);
 
     }
 
